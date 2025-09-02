@@ -1,6 +1,7 @@
 import './Dropdown.css';
 import { useState } from 'react'
 import itemsJson from '../items.json';
+import Back from './Back'
 
 export default function Dropdown() {
   const [items, setItems] = useState(itemsJson.items);
@@ -32,6 +33,7 @@ export default function Dropdown() {
 }
 
   return (
+    <>
     <div className="center container main">
       <h1>Dropdown</h1>
       <Input />
@@ -40,5 +42,7 @@ export default function Dropdown() {
         {items.map((item, idx) => <option key={idx}>{item}</option>)}
       </select>
     </div>
+    <Back/>
+    </>
   );
 }
