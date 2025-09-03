@@ -1,0 +1,86 @@
+html, body, input {
+    font-family: cursive;
+}
+
+.main {
+    max-width: 550px;
+    width: clamp(450px, 80vw, 550px)
+}
+
+button {
+    border: none;
+}
+
+ul {
+    min-width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.task {
+    background-color: cornsilk;
+    font-size: 1.2rem;
+    max-width: 90%;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    margin: .5rem 1rem .5rem 0;
+}
+
+.task:hover {
+    background-color: moccasin;
+    cursor: pointer;
+}
+
+.task input[type="checkbox"] {
+    accent-color: rgb(61, 41, 11);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.icon {
+    font-size: 1.1rem;
+}
+
+.icon-container {
+    padding: .3rem;
+    border-radius: 4px;
+    display: flex;
+    margin-left: .2rem;
+    border: 3px solid rgb(75, 36, 9);
+}
+
+.editing {
+    min-width: 100%;
+}
+
+.edit {
+    background-color: khaki;
+}
+
+.edit:hover {
+    background-color: rgb(231, 214, 61);
+    cursor: pointer;
+}
+
+.delete {
+    background-color: rgb(214, 68, 68);
+}
+
+.delete:hover {
+    background-color: rgb(185, 46, 46);
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
