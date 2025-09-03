@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, Routes, Route, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import Dropdown from './components/Dropdown';
 import Page404 from './pages/Page404';
 import Home from './pages/Home';
+import TasksList from './components/TasksList';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/dropdown',
     element: <Dropdown />
+  },
+  {
+    path: '/tasks',
+    element: <TasksList />
   },
   {
     path: '/*',

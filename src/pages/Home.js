@@ -6,6 +6,7 @@ export default function Home() {
             <h1>Projetos com react</h1>
             <ul>
                 <li><Link to="/dropdown" className="link">Dropdown</Link></li>
+                <li><Link to="/tasks" className="link">Tasks</Link></li>
                 <li><Link to="/teste" className="link">404</Link></li>
             </ul>
         </div>
